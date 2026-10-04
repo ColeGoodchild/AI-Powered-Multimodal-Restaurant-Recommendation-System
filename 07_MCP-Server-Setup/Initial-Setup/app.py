@@ -127,8 +127,16 @@ with gr.Blocks(title="Connoisseur Companion") as demo:
 
     msg_input.submit(handle_chat, [msg_input, chatbot], [chatbot])
     msg_input.submit(lambda: "", None, msg_input)
-
     btn1.click(handle_chat, [gr.State("Find me some moody restaurants"), chatbot], [chatbot])
     btn2.click(handle_chat, [gr.State("Tell me about Iron & Embers"), chatbot], [chatbot])
     btn3.click(handle_chat, [gr.State("What's a zen dining experience in Little Tokyo?"), chatbot], [chatbot])
+
+# Launch the App
+if __name__ == "__main__":
+    print("Starting Connoisseur Companion...")
+    demo.launch(
+        share=True,
+        theme=gr.themes.Soft(),
+    )
+
 
