@@ -1,6 +1,6 @@
-# 🍽️ AI-Powered Restaurant Recommendation System
+# 🍽️ AI-Powered Multimodal Restaurant Recommendation System
 
-### A Complete End-to-End Multimodal AI Application Built from Scratch
+### An end-to-end AI application combining LLMs, multimodal RAG, vector search, multi-agent reasoning, and MCP.
 
 An end-to-end AI restaurant recommendation system that combines **LLM-powered data structuring, multimodal processing, vector search, metadata filtering, multi-agent reasoning, and the Model Context Protocol (MCP)**.
 
