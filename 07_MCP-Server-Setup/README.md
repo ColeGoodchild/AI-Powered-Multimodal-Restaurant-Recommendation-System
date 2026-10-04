@@ -18,3 +18,14 @@ Built a complete MCP client that connects to the Connoisseur server above, decla
 4. Called get_restaurant_info, recommend_by_vibe, and get_review via the MCP protocol
 
 Together, the server and client form a complete MCP application. I'll build on this basic client-server app in order to enhance the demo functions for intelligent tool selection and create a full-fledged MCP application!
+
+## MCP Host Setup
+
+Built a complete MCP host application—a Gradio chat interface backed by a WatsonX LLM that discovers and calls MCP tools through a ReAct agent loop.
+
+1. Connected to an MCP server at runtime and discovered its tools dynamically
+2. Converted MCP tool schemas into LLM-compatible tool definitions and bound them to the model
+3. Implemented a ReAct loop that iterates tool calls until the LLM produces a final answer
+4. Built a Gradio chat UI with a streaming placeholder and quick-start prompt buttons
+
+Together with the server built in the first lab, this application forms a complete end-to-end MCP system: a data layer exposed over the Model Context Protocol, and an intelligent host that uses it to answer natural language questions.
